@@ -1,6 +1,5 @@
 
-const back = "(";
-const tick = ")";
+
 
 // El valor se que seleccione se agregará a la pantalla
 
@@ -19,7 +18,10 @@ function Calcular(){
     const resultado = eval(valorPantalla);
     document.getElementById('pantalla').value = resultado
 }
-// Borra el último de las teclas ingresadas-PENDIENTE
-function BorrarUno(){
-    pass
+// Borra el último de las teclas ingresada
+function BorraUltimo(){
+    let cadenaNueva = document.getElementById('pantalla').value;
+    cadenaNueva = cadenaNueva.slice(0, cadenaNueva.length -1);
+    document.getElementById('pantalla').value = cadenaNueva;
+    
 }
