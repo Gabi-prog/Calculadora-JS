@@ -13,7 +13,10 @@ h2 {
   color: #ada8a8; 
 }
 .calculadora {
-  width: 314px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 314px;  
   margin: 0 auto;
   background-color: #ada8a8;
   padding: 20px;
@@ -22,8 +25,8 @@ h2 {
 }
 
 #pantalla {
-  width: 90%;
-  padding: 10px;
+  width: 100%;
+  padding: 7px;
   font-size: 20px; 
   margin-bottom: 10px;
   text-align: right;
@@ -32,10 +35,14 @@ h2 {
   border: 1px solid #666; 
 }
 
-input[type="button"] {
+input[type="button"] { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   width: 70px;
   height: 40px;
-  margin-right: 5px;
+  margin: 4px;
   margin-bottom: 5px;
   font-family: Roboto, sans-serif;
   font-size: 16px;  
